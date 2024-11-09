@@ -3,7 +3,7 @@
 #include "Container.h"
 
 int main(){
-
+    std::setlocale(LC_ALL, "ru_RU.UTF-8");
     // Container records(10);
     // records.addRecord();
     // records.printRecords();
