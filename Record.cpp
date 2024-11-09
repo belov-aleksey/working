@@ -150,3 +150,39 @@ void Record::countSportRecords(Record *records, int N) {
         std::cout << entry.first << ": " << entry.second << std::endl;
     }
 }
+
+
+void Record::set_sport(std::string sport_){
+    sport = sport_;
+}
+
+void Record::set_discipline(std::string discipline_){
+    discipline = discipline_;
+}
+
+void Record::set_type(int type_){
+    type = type_;
+}
+
+void Record::set_gender(int gender_){
+    gender = gender_;
+}
+
+
+void Record::set_born(int day, int month, int year){
+    born[1]= day;
+    born[2] = month;
+    born[3] = year;
+}
+
+void Record::set_name(std::string name_){
+    name = name_;
+}
+
+void Record::set_country(std::string country_){
+    country = country_;
+}
+
+void Record::set_achievement(double achievement_){
+    achievement = achievement_;
+}
