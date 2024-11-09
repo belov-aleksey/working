@@ -29,12 +29,16 @@ public:
     void set_country(std::string country_);
     void set_achievement(double achievement_);
 
+    std::string get_sport();
+    // TODO: добавить оставшиеся гетеры
+
 
     void input(std::ifstream &inputFile);
     void print() const;
-    void addRecord(Record *&records, int &N); 
-    static void printFemaleRecords(Record *records, int N);
-    static void countSportRecords(Record *records, int N);
+     
+    // void addRecord(Record *&records, int &N);
+    // static void printFemaleRecords(Record *records, int N);
+    // static void countSportRecords(Record *records, int N);
 };
 
 #endif // RECORD_H

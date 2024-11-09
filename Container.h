@@ -27,12 +27,11 @@ class Container {
         Container(std::ifstream &inputFile);
         ~Container();
 
-
-        void addRecord(Record record); // addRecord с обновлением existingRecordsCount и в конце вызвать printRecordsToFile
+        // TODO: реализовать addRecord по аналогии со старым addRecord
+        void addRecord(); 
         void printRecords();
         // void removeRecord(string name); // пока без него
-        // void loadRecordsFromFile(string filename); // input
-        // void printRecordsToFile(string filename); // часть кода, которая есть в старом addRecord (запись всеъ записей обратно в файл)
+        // void printRecordsToFile(); // часть кода, которая есть в старом addRecord (запись всеъ записей обратно в файл)
         // void printFemaleRecords(); // реализован, но передавать массив и количество элементов не нужно - они будут являться полями этого объекта
         // void countSportRecords();
 };

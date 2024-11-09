@@ -32,7 +32,8 @@ Container::~Container()
     cout << "\nВызван деструктор класса Container";
 }
 
-void Container::addRecord(Record record)
+
+void Container::addRecord()
 {
     Record newRecord;
 
@@ -75,7 +76,14 @@ void Container::addRecord(Record record)
     std::cout << "Введите достижение: ";
     double achievement;
     std::cin >> achievement;
-    newRecord.set_achievement(achievement);    
+    newRecord.set_achievement(achievement);
+
+    if (existingRecordsCount < max_length){
+        records[existingRecordsCount] = newRecord;
+        existingRecordsCount++;
+    }
+    // Обновить N в текстовом файле (первая строка)
+    // И добавить в конец текстового файла нового рекордсмена
 }
 
 void Container::printRecords(){
